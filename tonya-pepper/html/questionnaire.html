@@ -24,13 +24,13 @@ $(function() {
      root    : '#qitalk',
      tplDir  : './tpl/questionnaire',
      preload : {
-       tpl     : ['qa4_1','qa4_2','qa4_3'],
+       tpl     : ['welcome','qa4_1','qa4_2','qa4_3'],
        service : ['ALMemory', 'ALTextToSpeech']
      },
      handle : {
         start : function() {
             // preload処理終了後に通知
-            Qitalk.presentView('qa4_1');
+            Qitalk.presentView('welcome');
         },
         presented: function() {
             // 画面遷移後に通知
