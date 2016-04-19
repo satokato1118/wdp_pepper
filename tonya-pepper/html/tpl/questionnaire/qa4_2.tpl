@@ -6,7 +6,7 @@ Qitalk.send("/tonya/Signal/questionnaire/next_tpl", "qa4_3");
 
 <script>
 function choise(selectedNo){
-    Qitalk.send("/tonya/Signal/questionnaire/answer", selectedNo);
+    Qitalk.send("/tonya/Signal/questionnaire/answer2", selectedNo);
     Qitalk.send("/tonya/Signal/questionnaire/exit", "false");
 };
 </script>
