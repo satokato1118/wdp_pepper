@@ -31,6 +31,7 @@
         <File name="presentation03" src="html/presentation03.html" />
         <File name="presentation04" src="html/presentation04.html" />
         <File name="b_114" src="presentation/b_114.mp3" />
+        <File name="welcome" src="html/tpl/questionnaire/welcome.tpl" />
         <File name="__init__" src="Lib/requests/__init__.py" />
         <File name="adapters" src="Lib/requests/adapters.py" />
         <File name="api" src="Lib/requests/api.py" />

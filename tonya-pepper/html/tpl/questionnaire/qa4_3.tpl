@@ -1,5 +1,5 @@
 <script>
-Qitalk.proxy.ALTextToSpeech.say('いよいよ、最後の質問です。');
+Qitalk.proxy.ALTextToSpeech.say('いよいよ、次が｜賽ゴの質問です予ォ、？');
 Qitalk.proxy.ALTextToSpeech.say('好きなエスプレッソの種類を教えてください。');
 
 Qitalk.send("/tonya/Signal/questionnaire/next_tpl", "");
@@ -7,7 +7,8 @@ Qitalk.send("/tonya/Signal/questionnaire/next_tpl", "");
 
 <script>
 function choise(selectedNo){
-    Qitalk.send("/tonya/Signal/questionnaire/answer", selectedNo);
+    $(".btn").attr("disabled", true);
+    Qitalk.send("/tonya/Signal/questionnaire/answer3", selectedNo);
     Qitalk.send("/tonya/Signal/questionnaire/exit", "true");
 };
 </script>
