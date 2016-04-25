@@ -1,11 +1,12 @@
 <script>
-Qitalk.proxy.ALTextToSpeech.say('あなたが好きなコーヒー豆の種類を、教えてください');
+Qitalk.proxy.ALTextToSpeech.say('あなたが好きなコーヒー豆の種類を、教えてくださアイッ、');
 
 Qitalk.send("/tonya/Signal/questionnaire/next_tpl", "qa4_2");
 </script>
 
 <script>
 function choise(selectedNo){
+    $(".btn").attr("disabled", true);
     Qitalk.send("/tonya/Signal/questionnaire/answer1", selectedNo);
     Qitalk.send("/tonya/Signal/questionnaire/exit", "false");
 };
